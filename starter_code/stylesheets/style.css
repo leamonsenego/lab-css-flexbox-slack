@@ -8,3 +8,506 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Inter";
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  /*  background-color: #540B51; */
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: #540B51;
+}
+
+.header-logo {
+  width: 180px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.headline-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #540B51;
+}
+
+.headline-main {
+  color: #F3EAE2;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headline-title{
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  margin: 2px;
+}
+
+.header-sign-up-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin: 10px 0;
+}
+
+.header-sign-up-description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-sign-up-actions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.header-sign-up-buttons {
+  flex: 1;
+  width: auto !important; /* to override default buttons styles */
+}
+
+.header-sign-up-button {
+  color: #540B51;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #4285F4;
+}
+
+.google-button-label {
+  flex: 1;
+  color: white;
+}
+
+.google-button-icon {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: calc(100% - 8px);
+  aspect-ratio: 1;
+  background-color: #F3EAE2;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.trusted-companies-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+  background-color: #F3EAE2;
+}
+.trusted-companies-wrapper-title{
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 16px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.trusted-companies-wrapper-logos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.trusted-companies-logos{
+  padding: 4px;
+  max-width: 30%;
+  max-height: 30%;
+  object-fit: contain;
+}
+.article-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+  background-color: #F3EAE2;
+}
+
+.article-image{
+  margin-top: 20px;
+  max-width: 100%;
+  object-fit: contain;
+  padding-right: 20px;
+}
+
+#image-right-aligned {
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+.article-title{
+  margin: 8px;
+}
+
+.article-text{
+  font-size: 16px;
+  margin: 12px;
+  line-height: 24px;
+}
+
+.article-content{
+  margin: 16px;
+}
+
+.slack-stats{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-stats{
+  text-align: center;
+  margin: 22px;
+}
+
+.stats-title{
+  font-size: 27px;
+  text-align: center;
+  margin: 40px 20px 10px 20px;
+}
+
+.slack-stats-numbers{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  text-align: center;
+  margin: 80px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.percentages{
+  font-size: 32px;
+  font-weight: bold;
+  color: #540B51;
+  text-align: center;
+}
+
+.stats-buttons-wrapper{
+  text-align: center;
+}
+
+.purple-button{
+  background-color: #540B51;
+  color: #F3EAE2;
+  margin: 10px;
+}
+
+button.buttons.purple-button{
+  width: 90%;
+  border: 2px solid white;
+}
+
+button.buttons.ivory-button{
+  width: 90%;
+  color: #540B51;
+  background-color: white;
+  border: 1px solid #540B51;
+}
+
+.welcome-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+  padding: 30px 10px;
+  background-color: #540B51;
+  color: #F3EAE2;
+}
+
+.welcome-wrapper-title{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.nav-footer-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.nav-footer-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.header-logo-footer{
+  width: 50px;
+  padding: 10px;
+  margin: 10px 2px 2px 12px;
+}
+
+.footer-menu-titles{
+  font-weight: bold;
+}
+
+.terms-and-conditions{
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  row-gap: 14px;
+  font-weight: bold;
+}
+
+#download-slack-link{
+  color: #2E71A6;
+}
+
+.social-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.copyright-footer{
+  font-size: 10px;
+  color: #454245;
+  text-align: center;
+  margin-bottom: 24px;
+}
+/* Components */
+
+.buttons {
+  width: 300px;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.article-link{
+  text-decoration: none;
+  margin: 10px;
+  color: #2E71A6;
+  padding: 8px;
+}
+
+ul{
+  list-style: none;
+}
+
+nav div button {
+  border: none;
+  padding: 0px;
+}
+
+nav div button img {
+  width: 40px;
+  background-color: #540B51;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > div > ul {
+  display: none;
+}
+
+#free {
+  color: #ECB12F;
+  font-weight: bold;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.sign-up button {
+  margin: 5px;
+  background-color: #F3EAE2;
+  width: 500px;
+  height: 80px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #540B51;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 767px) {
+  .headline-wrapper {
+    flex-direction: row;
+  }
+
+  .headline-main {
+    flex: 1.5;
+  }
+
+  .headline-title {
+    font-size: 74px;
+    text-align: left;
+    margin-right: 50px;
+  }
+
+  .header-sign-up-description {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .header-sign-up-actions{
+    padding-left: 20px;
+  }
+
+  .headline-image {
+    flex: 1;
+    overflow: hidden;
+  }
+  .trusted-companies-wrapper-logos{
+  }
+  .article-image{
+    padding-right: 240px;
+  }
+
+  #image-right-aligned{
+    padding-left: 240px;
+    padding-right: 0;
+  }
+
+  .stats-buttons-wrapper{
+    display: flex;
+    flex-direction: row;
+  }
+  .slack-stats-numbers{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-footer-wrapper{
+    font-size: 20px;
+    justify-content: space-evenly;
+    margin: 10px 2px 2px 10px;
+    justify-content: flex-start;
+  }
+
+  .terms-and-conditions{
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: flex-start;
+    font-size: 14px;
+    column-gap: 10px;
+    margin: 20px 5px 40px 15px;
+  }
+
+  .social-footer{
+    justify-content: space-around;
+  }
+
+  .copyright-footer{
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .headline-main {
+    flex: 1;
+  }
+
+  .header-sign-up-actions {
+    flex-direction: row;
+    column-gap: 8px;
+  }
+
+  .headline-image {
+    flex: 1;
+  }
+
+  .article-title{
+    font-size: 40px;
+    margin: 20px;
+  }
+
+  .article-text{
+    margin: 20px;
+  }
+
+  #article-right-aligned{
+    flex-direction: row-reverse;
+    padding-right: 0;
+  }
+
+  #image-right-aligned{
+    padding-right: 0;
+    padding-left: 20px;
+  }
+  .article-wrapper{
+    flex-direction: row;
+    padding-right: 20px;
+    padding-left: 0;
+  }
+
+  .nav-footer-wrapper{
+    font-size: 14px;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .terms-and-conditions{
+    justify-content: flex-start;
+    column-gap: 100px;
+  }
+  .social-footer{
+    justify-content: flex-start;
+    column-gap: 100px;
+  }
+
+  .copyright-footer{
+    text-align: left;
+    margin-left: 22px;
+  }
+}
+
+
+
